@@ -1,0 +1,74 @@
+.benifits {
+    display: flex;
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+    @include phones {
+        padding: 0;
+    }
+    
+    &::before{
+        content: url("../../img/circles.png");
+        color: #000;
+        position: absolute;
+        top: rem(40px);
+        right: 0;
+        transform: translateX(50%);
+        
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:first-child {
+        padding-left: 0;        
+    }
+    &:last-child {
+        padding-right: 0;
+        &::before {
+            display: none;
+        }
+        
+    }
+}
+
+.benifit {
+    text-align: center;
+    @include phones {
+        display: flex;
+        }
+}
+
+.benefit__image-wrapper {
+    display: inline-block;
+    width: rem(126px);
+    height: rem(126px);
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.benefit__img {
+    width: rem(68px);
+    height: rem(68px);
+    position: absolute;
+    top: 23%;
+    left: 23%;
+    transform: translate (-50% -50%);
+}
+
+.benefit__title {
+    font-size: rem(24px);
+    color: black;
+    font-weight: bold;
+    @include phones {
+                padding-top: rem(20px);
+        }
+}

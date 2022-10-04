@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    @include phones {
+        flex-direction: column; 
+        padding-bottom: rem(22px);
+    }
+}
+
+.social {
+    display: flex;    
+}
+
+
+.social__img {
+    margin-left: rem(10px);
+}
+
+.adress {
+    padding-top: 23px;
+}

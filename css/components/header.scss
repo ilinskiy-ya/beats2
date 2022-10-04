@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu {
+    margin: 0 rem(30px);
+    padding-top: 10px;
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    @include tablets {
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        font-size: 40px;
+    }
+}
+
+.menu__item {
+    margin-right: rem(15px);
+    &:last-child {
+        margin-right: rem(0px);
+    }
+        @include tablets {
+            margin-right: 0;
+            padding-top: rem(15px);
+        }
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+            display: none; 
+        }
+}
+
+.phone-number {
+    font-size: rem(24px);
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    padding-top: 10px;
+    @include phones {
+        justify-content: center;
+        padding: 1%;
+    }
+
+}
+
+.phone-number__icon-elem {
+    width: rem(15px);
+    height: rem(15px);
+    margin-right: rem(5px);
+    flex-shrink: 0;
+    @include tablets {
+        filter: invert(0%) sepia(79%) saturate(2476%) hue-rotate(353deg) brightness(118%) contrast(119%);        
+    }
+}
+
+.menu__link {
+    white-space: nowrap;
+    text-decoration: none;
+    &:hover {
+        transition: 0.5s;        
+        color: $red;                
+    }
+}
+
+.phone-number__text {
+    white-space: nowrap;
+    font-size: rem(18px);
+    @include tablets {
+        color: $red;
+    }
+}

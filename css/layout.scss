@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    font-size: $baseFontSize;
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+        @include phones {
+            font-size: $baseFontSize - 2px;
+        }
+    font-family: inherit;
+    line-height: 1.42;
+    color: #666;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $containerWith + rem(20px);
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 95%;
+    max-width: $containerWith;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
