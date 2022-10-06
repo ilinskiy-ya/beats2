@@ -69,6 +69,7 @@
 .menu__link {
     white-space: nowrap;
     text-decoration: none;
+    transition: 2s;
     &:hover {
         transition: 0.5s;        
         color: $red;                

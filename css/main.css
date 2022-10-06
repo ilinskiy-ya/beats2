@@ -273,6 +273,8 @@ img {
 .menu__link {
   white-space: nowrap;
   text-decoration: none;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 .menu__link:hover {
   -webkit-transition: 0.5s;
@@ -367,6 +369,8 @@ img {
   line-height: 1;
   text-decoration: none;
   border: none;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 .btn-red {
   background-color: #E01F3D;
