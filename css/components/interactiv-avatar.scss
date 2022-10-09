@@ -5,10 +5,15 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-
-    &--active {
+    transition: 1s;
+    &:hover {
         border-color: $red;
-    }
+        transition: 0.5s;
+    }      
+}
+
+.interectiv-avatar.active {
+    border-color: $red;
 }
 
 .interectiv-avatar-link {
