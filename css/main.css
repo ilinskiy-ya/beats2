@@ -538,9 +538,6 @@ img {
   }
 }
 
-/*.reviews__siction {
-        width: -webkit-fill-available;
-}*/
 .reviews__switcher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,6 +585,8 @@ img {
 .reviews__display-inner.active {
   position: static;
   opacity: 1;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .reviews__avatar {
@@ -1180,4 +1179,108 @@ img {
   .popup__close {
     margin-left: 0;
   }
+}
+
+.section__team {
+  min-height: 37.5rem;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.team__item {
+  margin-right: 1.25rem;
+  max-width: 13.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+.team__item :last-child {
+  margin-right: 0;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.team__content--version--desktop {
+  position: absolute;
+  margin-top: 315px;
+  width: 221px;
+}
+
+.team__title {
+  background-color: #fff;
+  border: 0px;
+  color: #292929;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: url(../../img/team/Polygon\ 1.png) right center no-repeat;
+}
+
+.team__item.active .team__title {
+  background: url(../../img/team/Frame\ 2.png) right center no-repeat;
+  z-index: 1;
+}
+
+.team__job {
+  font-size: 1.125rem;
+  color: #292929;
+}
+
+.team__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
