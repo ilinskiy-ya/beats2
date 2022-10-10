@@ -61,12 +61,12 @@
     font-size: rem(21px);
     font-weight: 700;
     cursor: pointer;
-    background: url(../../img/team/Polygon\ 1.png) right center no-repeat;
+    background: url(./../img/team/Polygon\ 1.png) right center no-repeat;
 }
 
 .team__item.active {
     .team__title{
-        background: url(../../img/team/Frame\ 2.png) right center no-repeat;
+        background: url(./../img/team/Frame\ 2.png) right center no-repeat;
         z-index: 1;}
     
 }
