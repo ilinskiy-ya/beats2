@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bxslider": "^4.2.14",
     "jquery": "^3.6.1"
   }
 }

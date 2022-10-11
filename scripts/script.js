@@ -64,3 +64,14 @@ $(".team__title").click(e => {
     openItem($this);
     }    
 });
+
+//slider
+
+$('.slider').bxSlider({
+        pager: false,
+        
+        ticker: false
+
+});
+
+

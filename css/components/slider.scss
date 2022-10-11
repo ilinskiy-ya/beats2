@@ -1,6 +1,13 @@
 .slider-container {
     display: flex;
     margin: 0;
+    width: 100%;
+    .bx-wrapper {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        max-width: max-content;
+    }
 }
 
 .slider_information{
@@ -14,6 +21,7 @@
 
 .arrow {
     display: flex;
+    display: none;
     align-items: center;   
 }
 
@@ -23,11 +31,16 @@
 
 .img_slider {
     max-width: rem(452px);
-    max-width: rem(452px);
-    @include phones { 
+    max-height: rem(452px);
+    @include tablets { 
     max-width: rem(200px);
-    max-width: rem(200px);
+    max-height: rem(300px);
     }
+    @include phones {
+        max-width: rem(50px); 
+        max-height: rem(250px);
+    }
+
 }
 
 .slider__content {
@@ -78,6 +91,7 @@
 }
 
 .discription {
+    text-align: center;
     display: flex;
     justify-content: space-around;
     margin-top: rem(15px);
