@@ -117,7 +117,7 @@ img {
 }
 
 .hero__container {
-  background: url(../../img/beats1.png) right center/50% auto no-repeat;
+  background: url(./../img/beats1.png) right center/50% auto no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,9 +988,12 @@ img {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
+.bx-viewport {
+  margin: 10px;
 }
 
 .slider_information {
@@ -1080,6 +1083,9 @@ img {
   }
 }
 
+.slider_img {
+  min-width: 28.25rem;
+}
 @media screen and (max-width: 480px) {
   .slider_img {
     display: -webkit-box;

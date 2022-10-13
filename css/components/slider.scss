@@ -6,8 +6,13 @@
         border: 0;
         background: transparent;
         box-shadow: none;
-        max-width: max-content;
+        flex-shrink: 2;
+        
     }
+}
+
+.bx-viewport {
+   margin: 10px;
 }
 
 .slider_information{
@@ -15,7 +20,6 @@
 
     @include tablets {
         margin: 0;
-
     }
 }
 
@@ -74,7 +78,7 @@
 }
 
 .slider_img {
-   // min-width: rem(452px);
+    min-width: rem(452px);
     @include phones {
         display: flex;
         justify-content: center
