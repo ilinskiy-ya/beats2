@@ -981,7 +981,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  width: 100%;
 }
 .slider-container .bx-wrapper {
   border: 0;
@@ -990,10 +989,6 @@ img {
           box-shadow: none;
   -ms-flex-negative: 2;
       flex-shrink: 2;
-}
-
-.bx-viewport {
-  margin: 10px;
 }
 
 .slider_information {

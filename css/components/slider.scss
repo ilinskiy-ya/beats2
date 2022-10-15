@@ -1,7 +1,7 @@
 .slider-container {
     display: flex;
     margin: 0;
-    width: 100%;
+ 
     .bx-wrapper {
         border: 0;
         background: transparent;
@@ -11,9 +11,6 @@
     }
 }
 
-.bx-viewport {
-   margin: 10px;
-}
 
 .slider_information{
     margin-left: rem(59px);
