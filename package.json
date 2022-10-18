@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "bxslider": "^4.2.14",
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "bxslider": "^4.2.14"
   }
 }
