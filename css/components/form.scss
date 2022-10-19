@@ -129,7 +129,6 @@ width: rem(1165px);
     border-radius: 50%;
     background: #fff;
 
-
     &::before {
         content: "";
         width: rem(14px);
@@ -146,6 +145,7 @@ width: rem(1165px);
 
 .form__btns {
     margin-top: rem(17px);
+    
     @include tablets {
             display: flex;
             justify-content: center;
