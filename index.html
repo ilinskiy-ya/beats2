@@ -435,6 +435,29 @@
                     </div>
                 </div>                
             </section>
+            <section class="section player-section">
+                <div class="container">
+                  <h2 class="section__title headline__title">Как мы работаем</h2>
+                  <div class="player-section__container">
+                    <div class="player">
+                      <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem"></div>
+                        <div class="player__splash"></div>
+                      </div>
+                      <div class="player__controls">
+                        <button class="player__start"></button>
+                        <div class="player__playback">
+                          <button class="player__playback-button"></button>
+                        </div>
+                        <div class="player__duration">
+                          <span class="player__duration-completed">0:00</span> :
+                          <span class="player__duration-estimate">0:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             <section class=" order-section">
                 <h2 class="section__title headline__title headline__title--orders order--colors">закажите доставку</h2>
                 <form action="" class="form">
@@ -453,7 +476,7 @@
                             <label class="form__block">
                                 <div class="form__title">Улица</div>
                                 <input type="text" class="form__input">
-                            </label>                            
+                            </label>                                                       
                         </div>
                         <div class="form_row">
                             <label class="form__block">
@@ -610,6 +633,7 @@
     <script type="module">
         import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
     </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

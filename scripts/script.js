@@ -67,11 +67,39 @@ $(".team__title").click(e => {
 
 //slider
 
-$('.slider').bxSlider({
-        pager: false,
-        
+/*$('.slider').bxSlider({
+        pager: false,        
         ticker: false
+});*/
 
-});
 
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+        pager: false,        
+        ticker: false
+  });
+  });
 
+  //youtube
+
+  let player;
+ 
+function onYouTubeIframeAPIReady() {
+ player = new YT.Player("yt-player", {
+   height: "405",
+   width: "660",
+   videoId: "cXKYb7fl6zw",
+   events: {
+     //onReady: onPlayerReady,
+     //onStateChange: onPlayerStateChange
+   },
+   playerVars: {
+    controls: 1,
+    disablekb: 1,
+    showinfo: 0,
+    rel: 0,
+    autoplay: 0,
+    modestbranding: 0
+  }
+ });
+}
