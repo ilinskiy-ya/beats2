@@ -35,6 +35,11 @@
     margin-bottom: rem(15px);
     margin-top: rem(94px);
     user-select: none;
+
+    @include tablets {
+        margin-bottom: 0;
+    }
+
     @include phones {
             font-size: rem(36px);
         }
@@ -46,7 +51,8 @@
     padding-right: 10%;
 
     @include tablets {
-            padding: 0 15%            
+            padding: 0 13%;
+            margin-bottom: 0;
         }
 
                 @include phones {

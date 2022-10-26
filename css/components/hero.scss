@@ -14,10 +14,11 @@
     padding: rem(24px) rem(20px) rem(45px) rem(20px);
 
     @include tablets {
-        //padding-top: rem(36px);
+        padding-top: rem(26px);
 
         background: none;
         padding-bottom: 0;
+        height: 99%;
     }
 }
 
